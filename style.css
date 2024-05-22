@@ -117,7 +117,7 @@ nav ul li a:hover::after{ /*메뉴에 마우스를 올렸을때 가상요소 너
     font-weight:600;
     color: #fff;
 }
-.tab-titles{
+.tab-title{
     display: flex;
     margin: 20px 0 40px;
 }
@@ -138,6 +138,24 @@ nav ul li a:hover::after{ /*메뉴에 마우스를 올렸을때 가상요소 너
     left:0;
     bottom:-8px;
     transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:#b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none; /*컨텐츠 숨기기*/
+}
+.tab-contents.active-tab{
+    display: block;
 }
 
 
